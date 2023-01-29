@@ -11,15 +11,16 @@ We annotate all the classes that we want to create of object of with @Component,
 If a class uses object of another class, we put @Autowired annotation above that object. This is because whenever SpringBoot application runs, the beans(objects) of all the component classes are generated, but the class that is using the object of another class does not know whether that object is present or not.
 For example there is a class called College that uses a student class object
 <br>
-<B>@Component<br></B>
+<br>
+@Component<br>
 public class College
 {<br>
-<B>@Autowired<br></B>
+@Autowired<br>
 Student student;<br>
 //some lines of code<br>
 }<br>
 <br>
-<B>@Component<br></B>
+@Component<br>
 public class Student<br>
  {<br>
  //some lines of code<br>
