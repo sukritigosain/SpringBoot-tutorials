@@ -7,7 +7,7 @@ Whenever Client sends a request , controller receives it and fetches the data fr
 <B>@Component<br></B>
 We annotate all the classes that we want to create of object of with @Component, On running the Spring Boot application by default all the beans(objects) are created in the container, but only of the classes that are marked with @Component annotation.
 
-<B>@Autowired</B>
+<B>@Autowired</B><br>
 If a class uses object of another class, we put @Autowired annotation above that object. This is because whenever SpringBoot application runs, the beans(objects) of all the component classes are generated, but the class that is using the object of another class does not know whether that object is present or not.
 For example there is a class called College that uses a student class object
 <br>
